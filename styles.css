@@ -481,6 +481,7 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		width: 100vw;
 	}
 	#ramen-go-small {
 		display: flex;
@@ -501,6 +502,7 @@ body {
 		gap: 60px;
 		padding-bottom: 50px;
 		height: 100%;
+		width: 100vw;
 	}
 	#body-order {
 		display: flex;
@@ -588,6 +590,32 @@ body {
 		font-size: 4.5vw;
 		text-align: center;
 		padding: 30px;
+	}
+	#list {
+		width: 100vw;
+		max-width: 100%;
+		overflow: auto;
+		scroll-behavior: smooth;
+		scroll-snap-type: both;
+	}
+	#list::-webkit-scrollbar {
+		display: none;
+	}
+	#cards-container-broths {
+		display: flex;
+		gap: 70px;
+		width: max-content;
+		padding-left: 10vw;
+	}
+
+	#cards-container-proteins {
+		display: flex;
+		gap: 70px;
+		width: max-content;
+		padding-left: 10vw;
+	}
+	.card {
+		width: calc(50vw - 20px);
 	}
 	.container-title-sub-body {
 		gap: 10px;
